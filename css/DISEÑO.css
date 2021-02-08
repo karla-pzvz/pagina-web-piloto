@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: raleway;
+}
+
+.content {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    text-align: center;
+    color: blue;
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #43C6AC;
+    /* fallback for old browsers
+    background: -webkit-linear-gradient(to right, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(243, 58%, 21%, 0.459), #43C6AC), url(img/Portada2.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+}
+
+nav {
+    text-align: right;
+    padding: 30px 5px 0px 5px;
+}
+
+nav>a {
+    text-decoration: none;
+    color: #fff;
+    margin: 15px;
+    font-weight: 300;
+}
+
+nav>a:hover {
+    text-decoration: underline;
+}
+
+.wave {
+    position: absolute;
+    /* bottom: 0px; */
+    width: 100%;
+}
+
+.contenido-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+}
+
+.contenido-header h2 {
+    font-weight: 300;
+}
+
+.titulo {
+    color: darkslateblue;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/*Nuestro producto*/
+.contenedor-nosotros {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagen-sobre-nosotros {
+    width: 48%;
+}
+
+.texto-about-us .content {
+    margin-bottom: 15px;
+}
+
+.texto-about-us h3 span {
+    background: darkblue;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-right: 15px;
+    padding: 3px;
+    box-shadow: 5px 5px 6px #bbb8bd;
+}
+
+.texto-about-us p {
+    text-align: justify;
+    padding: 0 0 30px 50px;
+    font-weight: 400;
+}
+
+/*Galeria*/
+.portafolio{
+    background: #f5f4f4;
+    padding: 30px 100px 30px 100px;
+}
+.galeria-port{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.imagen-port{
+    width: 24%;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.imagen-port>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hover-galeria{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: hsla(265, 83%, 57%, 0.575);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: transform.5s;
+}
+
+.hover-galeria>p{
+    color: #ffffff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/*Nuestro producto*/
+.nuestros-clientes{
+    padding: 30px 0 30px 0;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 460px;
+    height: 200px;
+    background: #4531b1;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.card>img{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0 20px 0 20px;
+    border: 3px solid white;
+}
+.texto-portafolio{
+    color: white;
+    margin: 0 20px 0 20px;
+    text-align: justify;
+}
+
+/*nuestro servicio*/
+
+.portada{
+    background: #f5f4f4;
+    padding: 30px;
+}
+
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cuadro-servicio{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cuadro-servicio>img{
+    width: 100px;
+    height: 100px;
+}
+
+.parrafo>h3{
+    text-align: center;
+}
+
+.parrafo>p{
+    text-align: justify;
+}
+
+footer{
+    background: #414141;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0 30px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.foo-text{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    border-bottom: 1px solid snow;
+    padding-bottom: 50px;
+}
+
+.tex-footer>h4{
+    border-bottom: 1px solid #7731b1;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+footer>p{
+    margin-top: 20px;
+    font-weight: 900;
+}
+
+@media screen and (max-width:500px){
+    .contenedor-nosotros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
